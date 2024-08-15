@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0c0c0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #40a919;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    margin-right: 60px;
+}
+
+.logo {
+    height: 80px;
+    vertical-align: middle;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Abril Fatface", serif;
+    font-weight: bold;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+main {
+    padding-top: 80px;
+    height: calc(100vh - 80px);
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #0f4c81;
+}
+
+.coordinates {
+    position: absolute;
+    top: 59px;
+    right: 10px;
+    background: white;
+    padding: 5px;
+    border: 1px solid #0f4c81;
+    color: #0f4c81;
+    font-family: 'arial black', serif;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #map {
+        height: 75%;
+    }
+
+    .coordinates {
+        font-size: 12px;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    #map {
+        height: 70%;
+    }
+
+    .coordinates {
+        font-size: 10px;
+        top:
+/* layers control */
+
+.leaflet-control-layers {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    background: #fff;
+    border-radius: 5px;
+    }
+.leaflet-control-layers-toggle {
+    background-image: url(images/logox.png);
+    width: 36px;
+    height: 36px;
+/* Estilos Responsivos */
+
+/* Asegura que las imágenes sean responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contenedor del mapa responsivo */
+#map {
+    width: 100%;
+    height: 80vh; /* Ajusta el alto según sea necesario */
+}
+
+/* Diseño flexible utilizando Flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.content {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .map-container {
+        height: 50vh;
+    }
+
+    .sidebar {
+        display: none; /* Oculta la barra lateral en pantallas pequeñas */
+    }
+}

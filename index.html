@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEOPORTAL - UNPHU</title>
+    <link rel="icon" href="images/logo unphu.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .leaflet-control-credits {
+            background: white;
+            padding: 6px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .leaflet-control-credits a {
+            color: #0078A8;
+            text-decoration: none;
+        }
+        .leaflet-control-credits a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo-header-unphu.png" alt="logo" class="logo">
+        </div>
+        <h1 style="text-align: center; margin-bottom: 0;">GEOPORTAL DE LA UNIVERSIDAD NACIONAL PEDRO HENRÍQUEZ UREÑA</h1>
+    </header>
+
+    <main>
+        <div id="map" style="height: 600px;"></div>
+        <div id="coordinates" class="coordinates"></div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+    <script src="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
+    <script src="layers/calles_UNPHU.js"></script>
+    <script src="layers/edificios_UNPHU.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
